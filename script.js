@@ -44,5 +44,9 @@ $(document).ready(function() {
 	$(".bottom_button").mouseleave(function() {
 		$('body').css("background-color", "#eee");
 	});
+	
+	$(".bottom_button:first").click(function() {
+		$(this).hide(1000);
+	});
 
 }); 
