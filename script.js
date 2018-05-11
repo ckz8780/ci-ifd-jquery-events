@@ -37,13 +37,14 @@ $(document).ready(function() {
 		$(this).removeClass("bigh2");
 	});
 	
-	$(".bottom_button").mouseenter(function() {
+	// Removed to complete challenge 4
+	/*$(".bottom_button").mouseenter(function() {
 		$('body').css("background-color", "#000");
 	});
 	
 	$(".bottom_button").mouseleave(function() {
 		$('body').css("background-color", "#eee");
-	});
+	});*/
 	
 	// Challenge 1
 	/*$(".bottom_button:first").click(function() {
@@ -60,6 +61,15 @@ $(document).ready(function() {
 	$(".bottom_button").click(function() {
 		var p = $(this).closest("div").find("p") // Find the closest div, then find the paragraph within it
 		p.slideToggle(500);
+	});
+	
+	// Challenge 4
+	$(".bottom_button").mouseenter(function() {
+		$(this).fadeTo(250, 0.50)
+	});
+	
+	$(".bottom_button").mouseleave(function() {
+		$(this).fadeTo(250, 1.0)
 	});
 
 }); 
