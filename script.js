@@ -51,9 +51,15 @@ $(document).ready(function() {
 	});*/
 	
 	// Challenge 2
-	$(".bottom_button").click(function() {
+	/*$(".bottom_button").click(function() {
 		var p = $(this).closest("div").find("p") // Find the closest div, then find the paragraph within it
 		p.toggle(1000);
+	});*/
+	
+	//Challenge 3 
+	$(".bottom_button").click(function() {
+		var p = $(this).closest("div").find("p") // Find the closest div, then find the paragraph within it
+		p.slideToggle(500);
 	});
 
 }); 
