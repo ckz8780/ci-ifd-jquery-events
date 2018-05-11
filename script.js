@@ -45,8 +45,15 @@ $(document).ready(function() {
 		$('body').css("background-color", "#eee");
 	});
 	
-	$(".bottom_button:first").click(function() {
+	// Challenge 1
+	/*$(".bottom_button:first").click(function() {
 		$(this).hide(1000);
+	});*/
+	
+	// Challenge 2
+	$(".bottom_button").click(function() {
+		var p = $(this).closest("div").find("p") // Find the closest div, then find the paragraph within it
+		p.toggle(1000);
 	});
 
 }); 
